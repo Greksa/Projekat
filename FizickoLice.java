@@ -20,6 +20,7 @@ public class FizickoLice extends Korisnik {
     }
    // konstruktor kopije
     public FizickoLice(FizickoLice x) {
+        super(x);
         this.bracniStatus = x.bracniStatus;
         this.godinaRodjenja = x.godinaRodjenja;
         this.imeMajke = x.imeMajke;
