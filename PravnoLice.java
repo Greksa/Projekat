@@ -21,7 +21,7 @@ public class PravnoLice extends Korisnik {
 
     // konstruktor kopije
     public PravnoLice(PravnoLice x) {
-
+        super(x);
         this.nazivPreduzeca = x.nazivPreduzeca;
         this.regBrojPreduzeca = x.regBrojPreduzeca;
         this.delatnost = x.delatnost;
