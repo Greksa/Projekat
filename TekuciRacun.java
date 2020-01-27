@@ -22,7 +22,9 @@ public class TekuciRacun extends Racun {
 
     // konstruktor kopije
     public TekuciRacun(TekuciRacun x) {
+        super (x);
         this.listaKartica = x.listaKartica;
+        this.stanjeNaRacunu = x.stanjeNaRacunu;
     }
     // konstruktor polja
 
