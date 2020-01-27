@@ -19,6 +19,7 @@ public class StednjaKreditRacun extends Racun {
 
     // konstruktor kopije
     public StednjaKreditRacun(StednjaKreditRacun x) {
+        super(x);
         this.orocenaSredstva = x.orocenaSredstva;
         this.kredit = x.kredit;
     }
