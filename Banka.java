@@ -168,11 +168,18 @@ public class Banka implements RacunaDobitPodizePrimaNovac, KonverzijeDigitroni {
                 System.out.println("Unesite iznos koji zelite da prebacite na karticu....");
                 skiniSaTekuceg = Integer.parseInt(sc.next());
                 greska = true;
+
             } catch (Exception e) {
                 System.out.println("Pogresan unos, pokusajte ponovo...");
                 sc.reset();
                 greska = false;
 
+            }
+
+            if (skiniSaTekuceg > korisnik.getTekuciRacun().getStanjeNaRacunu()) {
+                System.out.println("Nemate dovoljno sredstava na racunu, pokusajte ponovo...");
+                sc.reset();
+                greska = false;
             }
         } while (greska != true);
 
